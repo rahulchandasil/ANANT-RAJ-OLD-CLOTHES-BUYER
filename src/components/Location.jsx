@@ -18,13 +18,13 @@ export default function Location() {
               className="absolute inset-0 group-hover:grayscale-0 grayscale transition-all duration-700"
               title="Google Map Location of Anant Raj Old Clothes Buyer"
             ></iframe>
-            <div className="absolute top-6 left-6 right-6 sm:top-8 sm:left-8 sm:right-auto bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl flex items-center gap-4 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center text-blue-600">
-                <MapPin size={24} />
+            <div className="absolute top-6 left-4 right-4 sm:top-8 sm:left-8 sm:right-auto bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-4 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <div className="text-slate-900 font-bold">Visit Our Shop</div>
-                <div className="text-slate-500 text-sm">Mudiali Club Landmark</div>
+                <div className="text-slate-900 font-bold text-sm sm:text-base">Visit Our Shop</div>
+                <div className="text-slate-500 text-xs sm:text-sm">Mudiali Club Landmark</div>
               </div>
             </div>
           </div>
@@ -34,12 +34,12 @@ export default function Location() {
               📍 Our Location
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 sm:mb-8">
               Conveniently Located in <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent">Kolkata</span>
             </h2>
             
-            <div className="space-y-6 text-lg text-slate-600 mb-10">
-              <div className="flex gap-4 p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 border border-slate-200/50 hover:border-[var(--color-accent)]/30 hover:shadow-md transition-all duration-300">
+            <div className="space-y-6 text-base sm:text-lg text-slate-600 mb-8 sm:mb-10">
+              <div className="flex gap-4 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 border border-slate-200/50 hover:border-[var(--color-accent)]/30 hover:shadow-md transition-all duration-300">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-accent)] flex items-center justify-center text-white shrink-0 mt-1 font-bold">
                   <MapPin size={20} />
                 </div>

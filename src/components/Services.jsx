@@ -51,7 +51,7 @@ export default function Services() {
             <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-accent-light)]/15 text-[var(--color-accent)] font-bold text-sm mb-6 border border-[var(--color-accent)]/20">
               ⭐ What We Offer
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4 sm:mb-6">
               What We <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent">Buy From You</span>
             </h2>
             <p className="text-lg text-slate-600 font-medium">
@@ -61,7 +61,7 @@ export default function Services() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl hover:border-[var(--color-accent)]/50 hover:-translate-y-2 transition-all duration-300 group">
+              <div key={index} className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100 hover:shadow-xl hover:border-[var(--color-accent)]/50 hover:-translate-y-2 transition-all duration-300 group">
                 <div className="w-16 h-16 bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-accent)] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[var(--color-accent)]/20">
                   {service.icon}
                 </div>
@@ -80,7 +80,7 @@ export default function Services() {
             <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-brand-light)]/15 text-[var(--color-brand)] font-bold text-sm mb-6 border border-[var(--color-brand)]/20">
               🚀 How It Works
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4 sm:mb-6">
               Sell Your Old Clothes in <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent">3 Simple Steps</span>
             </h2>
             <p className="text-lg text-slate-600 font-medium">
@@ -93,7 +93,7 @@ export default function Services() {
           <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-1 bg-gradient-to-r from-[var(--color-brand)] via-[var(--color-accent)] to-[var(--color-brand)] -translate-y-1/2 z-0 opacity-30"></div>
 
           {steps.map((step, index) => (
-            <div key={index} className="relative z-10 bg-white rounded-3xl p-8 shadow-lg border border-slate-100 text-center group hover:-translate-y-3 hover:shadow-2xl hover:border-[var(--color-accent)]/50 transition-all duration-300" style={{animationDelay: `${index * 0.1}s`}}>
+            <div key={index} className="relative z-10 bg-white rounded-3xl p-6 sm:p-8 shadow-lg border border-slate-100 text-center group hover:-translate-y-3 hover:shadow-2xl hover:border-[var(--color-accent)]/50 transition-all duration-300" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[var(--color-brand)]/10 to-[var(--color-accent)]/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-[var(--color-brand)]/20 group-hover:to-[var(--color-accent)]/20 transition-all duration-300 shadow-lg shadow-[var(--color-accent)]/10 border border-slate-100">
                 {step.icon}
               </div>
@@ -106,7 +106,7 @@ export default function Services() {
         </div>
         </div>
 
-        <div className="mt-20 bg-gradient-to-br from-[var(--color-accent)] via-[var(--color-accent)] to-[var(--color-brand)] rounded-[3rem] p-8 sm:p-16 text-center relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+        <div className="mt-20 bg-gradient-to-br from-[var(--color-accent)] via-[var(--color-accent)] to-[var(--color-brand)] rounded-[3rem] p-6 sm:p-16 text-center relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 animate-pulse" style={{animationDelay: '0.5s'}}></div>
           

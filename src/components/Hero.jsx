@@ -47,7 +47,7 @@ export default function Hero() {
               <span className="text-sm font-bold text-slate-700">✨ Top Buyer in Kolkata</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black text-slate-900 leading-[1.2] tracking-tight mb-4 sm:mb-6">
               Turn Your Old Clothes Into <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent relative inline-block">
                 Instant Cash
                 <svg className="absolute w-full h-3 -bottom-2 left-0 text-[var(--color-accent)]/30 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
@@ -56,7 +56,7 @@ export default function Hero() {
               </span>
             </h1>
             
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
+            <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
               We buy all kinds of old clothes, antique products, and more. Get the best price for your items with our hassle-free evaluation and instant payment service in Kolkata.
             </p>
             
@@ -124,13 +124,13 @@ export default function Hero() {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-auto bg-white/95 backdrop-blur rounded-2xl p-4 shadow-xl flex items-center gap-4 hover:shadow-2xl transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center text-green-600 font-bold text-xl">
+              <div className="absolute bottom-6 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-auto bg-white/95 backdrop-blur rounded-2xl p-4 shadow-xl flex items-center gap-4 hover:shadow-2xl transition-all duration-300">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center text-green-600 font-bold text-lg sm:text-xl shrink-0">
                   ₹
                 </div>
                 <div>
-                  <div className="text-slate-900 font-bold">Cash on the spot</div>
-                  <div className="text-slate-500 text-sm">No waiting time</div>
+                  <div className="text-slate-900 font-bold text-sm sm:text-base">Cash on the spot</div>
+                  <div className="text-slate-500 text-xs sm:text-sm">No waiting time</div>
                 </div>
               </div>
             </div>

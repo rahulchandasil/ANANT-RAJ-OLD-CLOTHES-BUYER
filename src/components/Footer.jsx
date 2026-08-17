@@ -38,7 +38,7 @@ export default function Footer() {
               <li><strong className="text-slate-300">Owner:</strong> Suresh Mali</li>
               <li><strong className="text-slate-300">Phone:</strong> <a href="tel:+919123373789" className="hover:text-white transition-colors">+91 9123373789</a></li>
               <li><strong className="text-slate-300">Alt Phone:</strong> <a href="tel:+919163199308" className="hover:text-white transition-colors">+91 9163199308</a></li>
-              <li><strong className="text-slate-300">Email:</strong> <a href="mailto:malisuresh36313@gmail.com" className="hover:text-white transition-colors">malisuresh36313@gmail.com</a></li>
+              <li><strong className="text-slate-300">Email:</strong> <a href="mailto:malisuresh36313@gmail.com" className="hover:text-white transition-colors break-all">malisuresh36313@gmail.com</a></li>
             </ul>
           </div>
 
@@ -46,9 +46,15 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500 font-medium">
-            &copy; {new Date().getFullYear()} Anant Raj Old Clothes Buyer. All rights reserved. 
-            <span className="text-slate-600 mx-2">•</span>
-            Designed with ❤️ for premium experience
+            &copy; {new Date().getFullYear()} All Rights Reserved by
+            <a
+              href="https://www.teamdeoskolkata.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:text-red-700 transition-colors duration-300 ml-1"
+            >
+              Digital Exposure Online Service
+            </a>
           </p>
           <button 
             onClick={scrollToTop}

@@ -35,8 +35,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-accent)] text-white flex items-center justify-center font-bold text-lg transition-all group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[var(--color-accent)]/30 duration-300">
+          <a href="#" className="flex items-center gap-2 sm:gap-3 group">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-accent)] text-white flex items-center justify-center font-bold text-lg transition-all group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[var(--color-accent)]/30 duration-300">
               AR
             </div>
             <div className="flex flex-col">

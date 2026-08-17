@@ -32,9 +32,9 @@ export default function About() {
             </div>
             
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 sm:bottom-8 sm:-right-8 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-              <div className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent font-black text-4xl mb-1">100%</div>
-              <div className="text-slate-600 text-sm font-bold leading-snug">Customer Satisfaction & Trust</div>
+            <div className="absolute -bottom-6 right-4 sm:bottom-8 sm:-right-8 bg-white p-4 sm:p-6 rounded-2xl shadow-xl max-w-[160px] sm:max-w-[200px] border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 z-10">
+              <div className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent font-black text-3xl sm:text-4xl mb-1">100%</div>
+              <div className="text-slate-600 text-xs sm:text-sm font-bold leading-snug">Customer Satisfaction & Trust</div>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function About() {
               📖 About Anant Raj
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4 sm:mb-6">
               Kolkata's Most <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] bg-clip-text text-transparent">Trusted</span> Old Clothes Buyer
             </h2>
             

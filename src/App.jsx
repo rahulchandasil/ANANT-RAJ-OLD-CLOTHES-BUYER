@@ -1,7 +1,13 @@
 import Home from './pages/Home';
+import FloatingCallButton from './components/FloatingCallButton';
 
 function App() {
-  return <Home />;
+  return (
+    <div className="w-full overflow-x-hidden relative">
+      <Home />
+      <FloatingCallButton />
+    </div>
+  );
 }
 
 export default App;

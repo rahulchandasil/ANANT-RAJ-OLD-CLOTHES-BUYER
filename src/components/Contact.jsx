@@ -4,16 +4,16 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="bg-gradient-to-br from-[var(--color-brand)] via-[var(--color-brand)] to-[var(--color-brand-dark)] rounded-[3rem] p-8 sm:p-16 lg:p-20 relative overflow-hidden text-center shadow-2xl hover:shadow-3xl transition-all duration-500">
+        <div className="bg-gradient-to-br from-[var(--color-brand)] via-[var(--color-brand)] to-[var(--color-brand-dark)] rounded-[3rem] p-6 sm:p-12 lg:p-20 relative overflow-hidden text-center shadow-2xl hover:shadow-3xl transition-all duration-500">
           {/* Decorative Elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 animate-pulse" style={{animationDelay: '0.5s'}}></div>
           
           <div className="relative z-10 max-w-3xl mx-auto fade-in-up">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white leading-tight mb-6">
+            <h2 className="text-2xl sm:text-4xl lg:text-6xl font-black text-white leading-tight mb-4 sm:mb-6">
               Ready to Sell Your Old Items?
             </h2>
-            <p className="text-[var(--color-accent-light)] text-lg sm:text-xl mb-12 font-medium">
+            <p className="text-[var(--color-accent-light)] text-base sm:text-xl mb-8 sm:mb-12 font-medium">
               Contact Anant Raj Old Clothes Buyer today for the best prices in Kolkata. We are available on phone and WhatsApp.
             </p>
             
@@ -41,9 +41,9 @@ export default function Contact() {
                 <Phone size={18} />
                 <span>Alt: 9163199308</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Mail size={18} />
-                <span>malisuresh36313@gmail.com</span>
+              <div className="flex items-center gap-2 max-w-full">
+                <Mail size={18} className="shrink-0" />
+                <span className="break-all">malisuresh36313@gmail.com</span>
               </div>
             </div>
           </div>
