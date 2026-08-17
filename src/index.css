@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #1a1a2e; /* Premium Dark Navy */
-  --color-brand-light: #d4a574; /* Luxury Gold */
-  --color-brand-dark: #0f0f1e; /* Darker Navy */
+  --color-brand: #059669; /* Premium Emerald */
+  --color-brand-light: #34d399; /* Soft Emerald */
+  --color-brand-dark: #065f46; /* Deep Emerald */
   
-  --color-accent: #c9a961; /* Rich Gold */
-  --color-accent-light: #e5c88f; /* Soft Gold */
+  --color-accent: #0f766e; /* Deep Teal */
+  --color-accent-light: #2dd4bf; /* Soft Teal */
   
-  --color-surface: #f5f1ed; /* Warm Cream */
-  --color-surface-dark: #e8e3dd; /* Soft Taupe */
+  --color-surface: #ffffff; /* Pure White */
+  --color-surface-dark: #fafafa; /* Minimalist Off-White */
 }
 
 @keyframes fadeInUp {
@@ -56,10 +56,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
+    box-shadow: 0 0 20px rgba(5, 150, 105, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(212, 165, 116, 0.5);
+    box-shadow: 0 0 30px rgba(5, 150, 105, 0.5);
   }
 }
 
@@ -111,7 +111,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #f5f1ed 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
   overflow-x: hidden;
 }
 
@@ -124,15 +124,15 @@ html {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, #f1f5f9, #e8e3dd);
+  background: linear-gradient(to bottom, #ffffff, #fafafa);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #d4a574, #c9a961);
+  background: linear-gradient(to bottom, #34d399, #2dd4bf);
   border-radius: 5px;
-  border: 2px solid #f5f1ed;
+  border: 2px solid #ffffff;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #c9a961, #b8944f);
+  background: linear-gradient(to bottom, #059669, #0f766e);
 }
 
 /* Selection styling */

@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { X } from 'lucide-react';
 import pic10 from '../assets/images/pic10.jpeg';
 import pic11 from '../assets/images/pic11.jpeg';
 import pic12 from '../assets/images/pic12.jpeg';
@@ -12,6 +14,7 @@ import pic5 from '../assets/images/pic5.jpeg';
 import pic7 from '../assets/images/pic7.jpeg';
 
 export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
   const images = [
     { src: pic11, alt: "Assorted old clothes bundle", className: "md:col-span-2 md:row-span-2" },
     { src: pic12, alt: "Stack of folded clothes", className: "md:col-span-1 md:row-span-1" },
@@ -48,6 +51,7 @@ export default function Gallery() {
             <div 
               key={index} 
               className={`relative rounded-3xl overflow-hidden group cursor-pointer ${item.className} hover-effect`}
+              onClick={() => setSelectedImage(item)}
             >
               <img 
                 src={item.src} 
@@ -62,6 +66,27 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-8 transition-opacity duration-300" onClick={() => setSelectedImage(null)}>
+          <button 
+            className="absolute top-6 right-6 sm:top-8 sm:right-8 w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 z-[110]"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
+          >
+            <X size={24} />
+          </button>
+          <img 
+            src={selectedImage.src} 
+            alt={selectedImage.alt} 
+            className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl animate-fadeIn"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }

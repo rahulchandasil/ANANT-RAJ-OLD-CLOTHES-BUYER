@@ -106,18 +106,18 @@ export default function Services() {
         </div>
         </div>
 
-        <div className="mt-20 bg-gradient-to-br from-[var(--color-accent)] via-[var(--color-accent)] to-[var(--color-brand)] rounded-[3rem] p-6 sm:p-16 text-center relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+        <div className="mt-20 bg-gradient-to-br from-white via-slate-50 to-slate-100 border border-slate-200/50 rounded-[3rem] p-6 sm:p-16 text-center relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 animate-pulse" style={{animationDelay: '0.5s'}}></div>
           
           <div className="relative z-10 fade-in-up">
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-4">Looking to buy affordable second-hand clothing?</h3>
-            <p className="text-[var(--color-accent-light)] text-lg mb-8 max-w-2xl mx-auto font-medium">
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-4">Looking to buy affordable second-hand clothing?</h3>
+            <p className="text-slate-600 text-lg mb-8 max-w-2xl mx-auto font-medium">
               We also sell the items we collect at very low, budget-friendly prices. Visit our location or contact us to check our current inventory.
             </p>
             <a 
               href="tel:9123373789" 
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-[var(--color-accent)] font-black text-lg hover:bg-[var(--color-accent-light)] hover:scale-105 hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-accent)] text-white font-black text-lg hover:shadow-xl hover:shadow-[var(--color-accent)]/30 hover:-translate-y-1 transition-all duration-300"
             >
               <Phone size={20} />
               <span>Contact for Buying</span>
