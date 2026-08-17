@@ -3,6 +3,12 @@ import pic11 from '../assets/images/pic11.jpeg';
 import pic12 from '../assets/images/pic12.jpeg';
 import pic13 from '../assets/images/pic13.jpeg';
 import pic15 from '../assets/images/pic15.jpeg';
+import pic16 from '../assets/images/pic16.jpeg';
+import pic18 from '../assets/images/pic18.jpeg';
+import pic19 from '../assets/images/pic19.jpeg';
+import pic20 from '../assets/images/pic20.jpeg';
+import pic21 from '../assets/images/pic21.jpeg';
+import pic5 from '../assets/images/pic5.jpeg';
 import pic7 from '../assets/images/pic7.jpeg';
 
 export default function Gallery() {
@@ -12,8 +18,15 @@ export default function Gallery() {
     { src: pic13, alt: "Used textiles", className: "md:col-span-1 md:row-span-1" },
     { src: pic15, alt: "Various garments", className: "md:col-span-1 md:row-span-2" },
     { src: pic10, alt: "Vintage collection", className: "md:col-span-1 md:row-span-1" },
-    { src: pic7, alt: "Sorted clothing", className: "md:col-span-1 md:row-span-1" }
+    { src: pic7, alt: "Sorted clothing", className: "md:col-span-1 md:row-span-1" },
+    { src: pic18, alt: "Old clothes item", className: "md:col-span-1 md:row-span-1" },
+    { src: pic19, alt: "Textile collection", className: "md:col-span-1 md:row-span-1" },
+    { src: pic20, alt: "Antique garment", className: "md:col-span-1 md:row-span-1" },
+    { src: pic21, alt: "Vintage wear", className: "md:col-span-1 md:row-span-1" },
+    { src: pic5, alt: "Classic textiles", className: "md:col-span-1 md:row-span-1" },
+    { src: pic16, alt: "Retro collection", className: "md:col-span-1 md:row-span-1" }
   ];
+  
 
   return (
     <section id="gallery" className="py-20 lg:py-32 bg-gradient-to-b from-white via-[var(--color-surface)]/30 to-white">

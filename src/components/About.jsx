@@ -1,5 +1,5 @@
 import { CheckCircle2 } from 'lucide-react';
-import pic4 from '../assets/images/pic4.jpeg';
+import pic20 from '../assets/images/pic20.jpeg';
 
 export default function About() {
   const points = [
@@ -20,7 +20,7 @@ export default function About() {
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-100 shadow-xl relative group">
               <img 
-                src={pic4} 
+                src={pic20} 
                 alt="Stack of clothes" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 onError={(e) => {

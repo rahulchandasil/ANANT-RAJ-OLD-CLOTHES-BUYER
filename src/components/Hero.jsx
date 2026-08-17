@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 const heroImages = [
   new URL('../assets/images/pic2.jpeg', import.meta.url).href,
   new URL('../assets/images/pic3.jpeg', import.meta.url).href,
-  new URL('../assets/images/pic4.jpeg', import.meta.url).href,
-  new URL('../assets/images/pic5.jpeg', import.meta.url).href,
+  new URL('../assets/images/pic18.jpeg', import.meta.url).href,
+  new URL('../assets/images/pic20.jpeg', import.meta.url).href,
   new URL('../assets/images/pic6.jpeg', import.meta.url).href,
   new URL('../assets/images/pic7.jpeg', import.meta.url).href,
   new URL('../assets/images/pic8.jpeg', import.meta.url).href,
@@ -18,6 +18,7 @@ const heroImages = [
   new URL('../assets/images/pic14.jpeg', import.meta.url).href,
   new URL('../assets/images/pic15.jpeg', import.meta.url).href,
   new URL('../assets/images/pic16.jpeg', import.meta.url).href,
+  new URL('../assets/images/pic19.jpeg',import.meta.url).href,
 ];
 
 export default function Hero() {
