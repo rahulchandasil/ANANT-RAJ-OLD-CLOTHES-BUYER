@@ -66,15 +66,7 @@ export default function About() {
               ))}
             </div>
 
-            <a 
-              href="tel:9163199308" 
-              className="inline-flex items-center gap-2 text-[var(--color-accent)] font-bold hover:text-[var(--color-accent-light)] transition-all duration-300 group text-lg"
-            >
-              <span className="border-b-2 border-transparent group-hover:border-[var(--color-accent-light)] pb-1 transition-colors">
-                Speak to our team today
-              </span>
-              <span className="group-hover:translate-x-2 transition-transform">→</span>
-            </a>
+            
           </div>
 
         </div>
