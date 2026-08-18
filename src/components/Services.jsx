@@ -10,7 +10,7 @@ export default function Services() {
     {
       icon: <Search className="w-8 h-8 text-[var(--color-brand)]" />,
       title: "2. We Evaluate",
-      description: "Our experts will review your items and offer a fair, competitive price based on their condition."
+      description: "We evaluate items based on physical inspection, material, condition, and weight. High-value items like Banarasi sarees fetch around ₹1,999 to ₹4,999 per unit."
     },
     {
       icon: <IndianRupee className="w-8 h-8 text-[var(--color-brand)]" />,

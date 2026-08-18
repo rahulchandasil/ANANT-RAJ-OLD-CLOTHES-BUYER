@@ -10,11 +10,19 @@ import pic18 from '../assets/images/pic18.jpeg';
 import pic19 from '../assets/images/pic19.jpeg';
 import pic20 from '../assets/images/pic20.jpeg';
 import pic21 from '../assets/images/pic21.jpeg';
+import pic22 from '../assets/images/pic22.jpeg';
+import pic23 from '../assets/images/pic23.jpeg';
+import pic24 from '../assets/images/pic24.jpeg';
+import pic25 from '../assets/images/pic25.jpeg';
+import pic26 from '../assets/images/pic26.jpeg';
+import pic27 from '../assets/images/pic27.jpeg';
+import pic28 from '../assets/images/pic28.jpeg';
 import pic5 from '../assets/images/pic5.jpeg';
 import pic7 from '../assets/images/pic7.jpeg';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAll, setShowAll] = useState(false);
   const images = [
     { src: pic11, alt: "Assorted old clothes bundle", className: "md:col-span-2 md:row-span-2" },
     { src: pic12, alt: "Stack of folded clothes", className: "md:col-span-1 md:row-span-1" },
@@ -27,8 +35,17 @@ export default function Gallery() {
     { src: pic20, alt: "Antique garment", className: "md:col-span-1 md:row-span-1" },
     { src: pic21, alt: "Vintage wear", className: "md:col-span-1 md:row-span-1" },
     { src: pic5, alt: "Classic textiles", className: "md:col-span-1 md:row-span-1" },
-    { src: pic16, alt: "Retro collection", className: "md:col-span-1 md:row-span-1" }
+    { src: pic16, alt: "Retro collection", className: "md:col-span-1 md:row-span-1" },
+    { src: pic22, alt: "Old clothes bundle", className: "md:col-span-1 md:row-span-1" },
+    { src: pic23, alt: "Vintage items", className: "md:col-span-1 md:row-span-1" },
+    { src: pic24, alt: "Assorted clothes", className: "md:col-span-1 md:row-span-1" },
+    { src: pic25, alt: "Textile mix", className: "md:col-span-1 md:row-span-1" },
+    { src: pic26, alt: "Used garments", className: "md:col-span-1 md:row-span-1" },
+    { src: pic27, alt: "Old fashion collection", className: "md:col-span-1 md:row-span-1" },
+    { src: pic28, alt: "Vintage fabrics", className: "md:col-span-1 md:row-span-1" }
   ];
+  
+  const displayedImages = showAll ? images : images.slice(0, 8);
   
 
   return (
@@ -47,10 +64,10 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[250px]">
-          {images.map((item, index) => (
+          {displayedImages.map((item, index) => (
             <div 
               key={index} 
-              className={`relative rounded-3xl overflow-hidden group cursor-pointer ${item.className} hover-effect`}
+              className={`relative rounded-3xl overflow-hidden group cursor-pointer ${item.className || ''} hover-effect`}
               onClick={() => setSelectedImage(item)}
             >
               <img 
@@ -65,6 +82,17 @@ export default function Gallery() {
             </div>
           ))}
         </div>
+
+        {images.length > 8 && (
+          <div className="mt-12 text-center fade-in-up">
+            <button 
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-[var(--color-brand)] text-[var(--color-brand)] font-bold text-lg hover:bg-[var(--color-brand)] hover:text-white transition-all duration-300"
+            >
+              {showAll ? 'Show Less' : 'Load More'}
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}

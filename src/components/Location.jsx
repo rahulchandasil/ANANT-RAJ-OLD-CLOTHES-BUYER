@@ -1,4 +1,4 @@
-import { MapPin, Navigation } from 'lucide-react';
+import { MapPin, Navigation, Clock } from 'lucide-react';
 
 export default function Location() {
   return (
@@ -49,6 +49,19 @@ export default function Location() {
                     17 No Chandra Mondal Lane<br/>
                     Kolkata (Landmark: Mudiali Club)<br/>
                     West Bengal, 700026
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 border border-slate-200/50 hover:border-[var(--color-accent)]/30 hover:shadow-md transition-all duration-300">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-accent)] flex items-center justify-center text-white shrink-0 mt-1 font-bold">
+                  <Clock size={20} />
+                </div>
+                <div>
+                  <h4 className="text-slate-900 font-black mb-1 text-lg">Business Hours</h4>
+                  <p className="leading-relaxed text-slate-700 font-medium">
+                    9:00 AM - 9:00 PM<br/>
+                    Monday to Sunday (Open 7 Days)
                   </p>
                 </div>
               </div>
